@@ -10,7 +10,7 @@ Composed by [grokhack.com /forge](https://grokhack.com/forge) from [Blockchains/
 
 - `@ai-sdk/xai` 5.0.14 from [Blockchains/ai](https://github.com/Blockchains/ai/tree/08d7f0a75e1466d28c3b71c2be4c0d89d552acf9/packages/xai) (upstream vercel/ai, licence Apache-2.0)
 
-Default model `grok-4.6`: newest general `grok-N.M` model referenced in [Blockchains/xai-sdk-python@1d9e1df](https://github.com/Blockchains/xai-sdk-python/tree/1d9e1dffc9a0521ede0e6bc7f2b906177b940d34). Override with `XAI_MODEL` (digest) or the model picker (chat, live list from `GET /v1/language-models`).
+Default model `grok-4.7` (newest model live on the composer's xAI account via `GET /v1/models`; preference grok-4.7, then grok-4.5). Newest general `grok-N.M` model referenced in the index: [Blockchains/xai-sdk-python@1d9e1df](https://github.com/Blockchains/xai-sdk-python/tree/1d9e1dffc9a0521ede0e6bc7f2b906177b940d34). Override with `XAI_MODEL` (digest) or the model picker (chat, live list from `GET /v1/language-models`).
 
 ## Reference implementations consulted (not copied; links pinned to the indexed commit)
 

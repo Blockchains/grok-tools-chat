@@ -3,7 +3,7 @@ export const FORGE = {
   "title": "Grok Tools Chat",
   "idea": "A chat assistant that can look up GitHub repos and do maths with tools",
   "repoUrl": "https://github.com/Blockchains/grok-tools-chat",
-  "defaultModel": "grok-4.6",
+  "defaultModel": "grok-4.7",
   "indexModels": [
     "grok-4.6",
     "grok-4.5",

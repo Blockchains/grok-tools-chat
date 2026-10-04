@@ -1,6 +1,6 @@
 {
   "forge_version": 1,
-  "composed_at": "2026-10-04T15:03:10Z",
+  "composed_at": "2026-10-04T15:04:20Z",
   "idea": "A chat assistant that can look up GitHub repos and do maths with tools",
   "repo": "Blockchains/grok-tools-chat",
   "archetype": "chat",
@@ -8,7 +8,7 @@
     "streaming",
     "tool_calling"
   ],
-  "default_model": "grok-4.6",
+  "default_model": "grok-4.7",
   "model_source": {
     "repo": "Blockchains/xai-sdk-python",
     "commit": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34"

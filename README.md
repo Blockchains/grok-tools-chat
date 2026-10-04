@@ -6,7 +6,7 @@ A chat assistant that can look up GitHub repos and do maths with tools
 
 - Archetype: `chat` · capabilities: streaming, tool_calling
 - Grok via Vercel AI SDK `@ai-sdk/xai` (browser, bring-your-own key; the key only goes to api.x.ai)
-- Default model `grok-4.6`
+- Default model `grok-4.7`
 
 ## Keys
 If api.x.ai answers 403 because the xAI account is out of credits or over its spending limit, the app shows an **xAI credits needed** notice; outputs are never faked.
