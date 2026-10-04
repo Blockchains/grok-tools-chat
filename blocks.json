@@ -1,0 +1,97 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Blockchains/.github/main/docs/blocks.schema.json",
+  "schema_version": "1.0",
+  "name": "grok-tools-chat",
+  "repo": "Blockchains/grok-tools-chat",
+  "summary": "Browser chat app composed by grokhack-forge: Grok via Vercel AI SDK @ai-sdk/xai with streaming and local tools (calculator, time, live GitHub repo lookup) plus xAI web search; visitors bring their own key, sent only to api.x.ai.",
+  "kind": [
+    "web-app"
+  ],
+  "stability": "reference",
+  "license": "MIT",
+  "homepage": "https://blockchains.github.io/grok-tools-chat/",
+  "entrypoints": [
+    {
+      "type": "web",
+      "name": "live app",
+      "ref": "https://blockchains.github.io/grok-tools-chat/",
+      "usage": "https://blockchains.github.io/grok-tools-chat/"
+    },
+    {
+      "type": "file",
+      "name": "forge.json / PARTS.md",
+      "ref": "forge.json",
+      "usage": "composition manifest: archetype, capabilities, SDK part + commit, default model"
+    },
+    {
+      "type": "file",
+      "name": "src/grok.ts",
+      "ref": "src/grok.ts",
+      "exports": [
+        "chat",
+        "listModels",
+        "describeError",
+        "isCreditsError",
+        "CREDITS_NOTICE",
+        "XAI_BASE_URL"
+      ]
+    },
+    {
+      "type": "file",
+      "name": "src/tools.ts",
+      "ref": "src/tools.ts",
+      "exports": [
+        "localTools",
+        "calculate",
+        "nowIn",
+        "githubRepo"
+      ]
+    }
+  ],
+  "inputs": [
+    {
+      "name": "XAI_API_KEY",
+      "type": "secret/env or pasted in the page"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Grok output",
+      "type": "web page"
+    }
+  ],
+  "deps": [
+    "node>=20"
+  ],
+  "compatible_with": [
+    {
+      "repo": "Blockchains/grokhack-forge",
+      "how": "the composer that generated it; re-compose for variants"
+    },
+    {
+      "repo": "Blockchains/grokhack-index",
+      "how": "where its SDK part and reference snippets come from"
+    },
+    {
+      "repo": "Blockchains/blockchainlab-sdk",
+      "how": "add blockchain data as tools (chat) or inputs (digest)"
+    }
+  ],
+  "tests": {
+    "command": "npm test && npm run e2e",
+    "ci": ".github/workflows/ci.yml",
+    "network": true
+  },
+  "env": [
+    {
+      "name": "XAI_API_KEY",
+      "required": false,
+      "purpose": "live Grok calls; without it CI proves api.x.ai rejects the unauthenticated call"
+    }
+  ],
+  "docs": {
+    "readme": "README.md",
+    "agents": "AGENTS.md",
+    "llms": "llms.txt"
+  }
+}

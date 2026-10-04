@@ -1,0 +1,24 @@
+# grok-tools-chat
+
+> Browser chat app composed by grokhack-forge: Grok via Vercel AI SDK @ai-sdk/xai with streaming and local tools (calculator, time, live GitHub repo lookup) plus xAI web search; visitors bring their own key, sent only to api.x.ai.
+
+## Docs
+
+- [README](https://raw.githubusercontent.com/Blockchains/grok-tools-chat/main/README.md): overview, install and the 'Use as a building block' section
+- [AGENTS.md](https://raw.githubusercontent.com/Blockchains/grok-tools-chat/main/AGENTS.md): setup, build/test commands, structure map, conventions and rules for AI coding agents
+- [blocks.json](https://raw.githubusercontent.com/Blockchains/grok-tools-chat/main/blocks.json): machine-readable building-block manifest (entrypoints, inputs, outputs, deps, compatible blocks)
+
+## Key files
+
+- [src/grok.ts](https://github.com/Blockchains/grok-tools-chat/blob/main/src/grok.ts): `chat()` async generator over streamText, `listModels`, error/credits handling
+- [src/tools.ts](https://github.com/Blockchains/grok-tools-chat/blob/main/src/tools.ts): `localTools` (AI SDK `tool()` + zod), the extension point
+- [src/main.ts](https://github.com/Blockchains/grok-tools-chat/blob/main/src/main.ts): UI
+- [src/forge.config.ts](https://github.com/Blockchains/grok-tools-chat/blob/main/src/forge.config.ts): archetype/model/feature flags
+
+## Related
+
+- [Build with Blocks](https://github.com/Blockchains/.github/blob/main/docs/BUILD-WITH-BLOCKS.md): how to assemble projects from Blockchains repos
+- [Org llms.txt](https://blockchains.github.io/llms.txt) · [blocks catalogue](https://blockchains.github.io/blocks.json)
+- [Blockchains/grokhack-forge](https://github.com/Blockchains/grokhack-forge): the composer that generated it; re-compose for variants
+- [Blockchains/grokhack-index](https://github.com/Blockchains/grokhack-index): where its SDK part and reference snippets come from
+- [Blockchains/blockchainlab-sdk](https://github.com/Blockchains/blockchainlab-sdk): add blockchain data as tools (chat) or inputs (digest)
