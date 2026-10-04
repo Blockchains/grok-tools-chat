@@ -1,6 +1,6 @@
 {
   "forge_version": 1,
-  "composed_at": "2026-10-04T14:58:59Z",
+  "composed_at": "2026-10-04T15:03:10Z",
   "idea": "A chat assistant that can look up GitHub repos and do maths with tools",
   "repo": "Blockchains/grok-tools-chat",
   "archetype": "chat",
