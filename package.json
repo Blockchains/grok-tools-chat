@@ -1,0 +1,25 @@
+{
+  "name": "grok-tools-chat",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Grok Tools Chat (composed by grokhack.com /forge)",
+  "scripts": {
+    "dev": "vite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test tests/*.test.ts",
+    "e2e": "tsx scripts/e2e.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/xai": "5.0.14",
+    "ai": "7.0.127",
+    "zod": "^4.1.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.0",
+    "tsx": "^4.20.0"
+  }
+}

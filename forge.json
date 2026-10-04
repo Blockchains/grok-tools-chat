@@ -1,0 +1,27 @@
+{
+  "forge_version": 1,
+  "composed_at": "2026-10-04T14:57:19Z",
+  "idea": "A chat assistant that can look up GitHub repos and do maths with tools",
+  "repo": "Blockchains/grok-tools-chat",
+  "archetype": "chat",
+  "capabilities": [
+    "streaming",
+    "tool_calling"
+  ],
+  "default_model": "grok-4.6",
+  "model_source": {
+    "repo": "Blockchains/xai-sdk-python",
+    "commit": "1d9e1dffc9a0521ede0e6bc7f2b906177b940d34"
+  },
+  "sdk_part": "Blockchains/ai#pkg:@ai-sdk/xai",
+  "sdk_commit": "08d7f0a75e1466d28c3b71c2be4c0d89d552acf9",
+  "index_generated_at": "2026-10-04T14:56:15Z",
+  "reference_parts": [
+    "Blockchains/pi#packages/ai/src/api/openai-completions.ts:1603",
+    "Blockchains/OmniRoute#src/shared/constants/featureFlagDefinitions.ts:944",
+    "Blockchains/anything-llm#server/utils/agents/aibitat/providers/ai-provider.js:371",
+    "Blockchains/opencodex#src/web-search/xai-executor.ts:1",
+    "Blockchains/xai-sdk-ts#src/types.ts:479",
+    "Blockchains/opencode#packages/opencode/src/provider/provider.ts:154"
+  ]
+}
