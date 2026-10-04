@@ -1,6 +1,6 @@
 # Integration parts used by Grok Tools Chat
 
-Composed by [grokhack.com /forge](https://grokhack.com/forge) from [Blockchains/grokhack-index](https://github.com/Blockchains/grokhack-index) (index generated 2026-10-04T14:56:15Z).
+Composed by [grokhack-forge](https://github.com/Blockchains/grokhack-forge) from [Blockchains/grokhack-index](https://github.com/Blockchains/grokhack-index) (index generated 2026-10-04T14:56:15Z).
 
 **Idea:** A chat assistant that can look up GitHub repos and do maths with tools
 
