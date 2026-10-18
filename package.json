@@ -12,14 +12,14 @@
     "e2e": "tsx scripts/e2e.ts"
   },
   "dependencies": {
-    "@ai-sdk/xai": "5.0.14",
-    "ai": "7.0.127",
-    "zod": "^4.1.8"
+    "@ai-sdk/xai": "5.0.22",
+    "ai": "7.0.141",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
-    "@types/node": "^22.10.0",
-    "typescript": "~5.9.3",
-    "vite": "^7.1.0",
+    "@types/node": "^26.6.5",
+    "typescript": "~7.0.2",
+    "vite": "^8.3.4",
     "tsx": "^4.20.0"
   }
 }
